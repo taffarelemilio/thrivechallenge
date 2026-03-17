@@ -144,7 +144,7 @@ Clarity of thinking is more important than completeness.
 - Created reusable Cards component for character and location
 - ChatGPT used for ServerStyleSheet default config on \_document.tsx and for typing interfaces based on API response examples
 - Copilot autocomplete used for some boilerplate code and for some style definitions
-- Added remote origin on next.config.js to allow <Image/> next/image optimization for the API images with a custom <ImageWrapper/> for preventing layout shift
+- Added remote origin on next.config.js to allow < Image /> next/image optimization for the API images with a custom < ImageWrapper /> for preventing layout shift
 - Added UI feedback for loading, error and a 'no characters/locations found' state
 - Added some hover and active style on the tabs
 
