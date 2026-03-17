@@ -134,7 +134,7 @@ Clarity of thinking is more important than completeness.
 
 ---
 
-- Created next-app@latest with custom options for app router
+- Created next-app@latest with custom options for page router
 - Added styled-components axios @tanstack/react-query
 - Default config for styled-components
 - Created a ReactQueryProvider to wrap the app with QueryClientProvider
