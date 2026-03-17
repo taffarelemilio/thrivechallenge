@@ -40,12 +40,12 @@ Keep the UI simple — we are not evaluating design skills.
 
 ⸻
 
-3. Locations Tab
+2. Characters Tab
 
 Fetch from:
 
 ```
-GET https://rickandmortyapi.com/api/location
+GET https://rickandmortyapi.com/api/character
 ```
 
 Display a simple card per character showing:
@@ -131,3 +131,23 @@ We are more interested in how you approach the problem than in a perfect final r
 If any requirement is unclear, make reasonable assumptions and document them in this README.
 
 Clarity of thinking is more important than completeness.
+
+---
+
+- Created next-app@latest with custom options for app router
+- Added styled-components axios @tanstack/react-query
+- Default config for styled-components
+- Created a ReactQueryProvider to wrap the app with QueryClientProvider
+- Created lib & services folders for API client and gets
+- Created types for characters and locations
+- Created hooks for fetching characters and locations using react-query, added enabled prop for fetching only when the respective tab is active and added staleTime & gcTime to avoid unnecessary refetching
+- Created reusable Cards component for character and location
+- ChatGPT used for ServerStyleSheet default config on \_document.tsx and for typing interfaces based on API response examples
+- Copilot autocomplete used for some boilerplate code and for some style definitions
+- Added remote origin on next.config.js to allow <Image/> next/image optimization for the API images with a custom <ImageWrapper/> for preventing layout shift
+- Added UI feedback for loading, error and a 'no characters/locations found' state
+- Added some hover and active style on the tabs
+
+- - Fixed a typo on this readme where '3. Locations Tab' was duplicated. (Lines 43 - 48)
+
+- - For production code I would improve accessibility & SEO, skeletons for loading states, theaming, better responsiveness and image fallbacks in case a remote image fails. I would also add some unit and integration tests. Observability tools and error tracking services. I would use .env variables for the API base URL.
